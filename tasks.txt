@@ -1,0 +1,8 @@
+Tasks
+
+1. Merge injuries and player totals datasets
+2. Once merged, perform data cleaning (remove nan values)
+3. Add extra column in Dataframe to see if player is injured or not
+ (int = 1 if injured, int = 0 if not injured.)
+4. Add another column to categorize type of injury (torn muscle, achilles, sprain)
+5. For the step above, do research how would we do this? Parse Notes column and do Regex?
