@@ -17,6 +17,22 @@
     ```bash
     RUN streamlit run main.py
     ```
+
+5. To see the processed data navgate to classifier folder 
+uncomment these lines of code 
+```python
+# player_data = pd.read_csv('final_player_data.csv') 
+
+# print(player_data.head())
+```
+
+```bash
+RUN python3 knn.py
+```
+This comment will show u a snapshot of the data in the terminal
+
+
+
     
 
 
