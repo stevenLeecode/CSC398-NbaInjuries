@@ -38,7 +38,7 @@ def main():
     # Dropping columns with all missing values
     player_df = CleanData.drop_empty_columns(player_df)
     player_df = CleanData.drop_cols(
-        player_df, ['birth_year_x', 'Acquired', 'Relinquished'])
+        player_df, ['birth_year_x', 'Acquired', 'Relinquished', 'birth_year_y'])
     player_df = CleanData.fill_missing_with_column_average(player_df)
 
     # Extracting injury information from the 'Notes' column

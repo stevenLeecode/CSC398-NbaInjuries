@@ -59,7 +59,9 @@ class CleanData:
             raise KeyError(f"Column '{notes_col}' not found in the DataFrame.")
 
         # Define a list of injury-related keywords
-        injury_keywords = ['torn', 'injured', 'side muscle', 'illness', 'broken', 'sprain', 'knee', 'ankle',
+        injury_keywords = ['torn', 'injured', 'side muscle', 'illness', 'broken', 'sprain', 'knee', 'ankle', 'muscle', 'back', 'sore', 'surgery', 'hip',
+                           'toe', 'leg', 'elbow', 'abdominal', 'quad', 'hand', 'finger', 'thigh', 'neck', 'arm', 'rib', 'knee', 'hamstring', 'achilles',
+                           'foot', 'wrist', 'IL', 'shoulder', 'head', 'concussion', 'groin', 'calf'
                            'hamstring', 'achilles', 'foot', 'wrist', 'IL', 'shoulder', 'head', 'concussion', 'groin', 'calf']
 
         # Function to determine injury type and injured status
