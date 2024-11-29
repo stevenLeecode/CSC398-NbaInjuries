@@ -51,17 +51,8 @@ def main():
     # Plotting the data
     plotter = Plot(player_df)
 
-    st.title("Injury Distribution Plot")
-    plotter.plot_injury_distribution()  # Display the injury type distribution plot
-
-    st.title("Injury Status Plot")
+    st.title("Injured vs non-injured")
     plotter.plot_injury_status()  # Display the injury status plot
-
-    st.title("Injury Status by Type Plot")
-    plotter.plot_injury_by_type_and_status()  # Display injury status by type plot
-
-    st.title("Injury Counts by Type")
-    plotter.plot_injury_counts()  # Display injury counts by type plot
 
 
 if __name__ == '__main__':
