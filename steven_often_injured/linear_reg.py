@@ -11,7 +11,7 @@ df = pd.read_csv('total_injuries.csv')
 # Define the X columns (independent variables / features) and
 # y variable (label / target - what we want to predict)
 
-X = df.loc[:, 'mp_x':'experience_y']
+X = df.loc[:, 'mp_x':'x3pa']
 y = df.loc[:, 'injuries']
 
 #----------------Linear Regression Model-----------------------# 

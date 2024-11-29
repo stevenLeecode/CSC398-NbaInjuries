@@ -11,7 +11,8 @@ df = pd.read_csv('total_injuries.csv')
 # Define the X columns (independent variables / features) and
 # y variable (label / target - what we want to predict)
 
-X = df.loc[:, 'mp_x':'experience_y']
+#taking out experience increases r squared by 0.03 percent
+X = df.loc[:, 'mp_x':'x3pa']
 y = df.loc[:, 'injuries']
 
 # Generate the train and test sets
