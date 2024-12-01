@@ -29,9 +29,6 @@ season_counts = injuries['SeasonPeriod'].value_counts()
 print("Injuries by Season Period:")
 print(season_counts)
 
-# Save results to CSV
-season_counts.to_csv('season_injury_counts.csv', header=['Count'])
-
 # Visualize the results
 season_counts.plot(kind='bar', color='skyblue')
 plt.title('Injuries by Season Period')
