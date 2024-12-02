@@ -23,6 +23,7 @@ def categorize_season(month):
 # Apply categorization
 injuries['Month'] = injuries['Date'].dt.month
 injuries['SeasonPeriod'] = injuries['Month'].apply(categorize_season)
+injuries = injuries.loc[injuries['Injured'] == 1] #Select all the injuries
 
 # Count injuries by season period
 season_counts = injuries['SeasonPeriod'].value_counts()
