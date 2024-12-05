@@ -1,3 +1,5 @@
+#Steven
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -14,6 +16,7 @@ df['month'] = df['Date'].dt.month
 df['day'] = df['Date'].dt.day
 df = df.loc[df['Injured'] == 1] #Select all the injuries
 
+#All our injury keywords for the 'Notes' Column
 injury_keywords = ['placed', 'torn', 'side muscle', 'illness', 'broken', 'sprain', 'knee', 'ankle', 'muscle', 'back', 'sore', 'surgery', 'hip',
                            'toe', 'leg', 'elbow', 'abdominal', 'quad', 'hand', 'finger', 'thigh', 'neck', 'arm', 'rib', 'knee', 'hamstring', 'achilles',
                            'foot', 'wrist', 'shoulder', 'head', 'concussion', 'groin', 'calf',
