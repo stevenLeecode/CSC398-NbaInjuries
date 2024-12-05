@@ -1,3 +1,5 @@
+#Steven
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -25,9 +27,9 @@ End of season = March - April
 
 '''
 october = df.loc[(df['month'] == 10) & (df['day'] >= 20)]
-october = october['Injured'].count()
+october = october['Injured'].count() #Last 10 days of october 
 
-beginning_of_season = df.loc[(df['month'] > 10)] #Last 10 days of October, November and December.
+beginning_of_season = df.loc[(df['month'] > 10)] # November and December.
 middle_of_season = df.loc[df['month'] <= 2] #January and February
 end_of_season = df.loc[(df['month'] <= 4) & (df['month'] > 3)] #March and April
 
