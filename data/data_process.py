@@ -1,8 +1,9 @@
 import pandas as pd  # type:ignore
 from dataclasses import dataclass
 
-# Author: Wilkenson H
-# Date: 2021-09-26
+"""
+Author: Wilkenson H. 
+"""
 
 
 @dataclass
@@ -25,11 +26,10 @@ class DataProcess:
     team_data: pd.DataFrame
 
     def merge_data(self):
-        # Merge player_stats and injury_data on player_id
         merged_data = pd.merge(
             self.player_stats, self.team_data, on=['player_id', 'season'], how='left')
 
-        # handle unbalanced data by taking the first n rows of injury_data
+        # Taking first n rows of injury_data
         merged_data = pd.concat(
             [merged_data, self.injury_data.head(len(merged_data))], axis=1)
 

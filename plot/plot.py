@@ -4,6 +4,10 @@ import seaborn as sns
 from dataclasses import dataclass
 import streamlit as st
 
+"""
+Author: Wilkenson H. 
+"""
+
 
 @dataclass
 class Plot:

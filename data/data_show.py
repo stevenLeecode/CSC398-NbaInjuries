@@ -3,6 +3,10 @@ import pandas as pd  # type: ignore
 from dataclasses import dataclass
 import streamlit as st  # type: ignore
 
+"""
+Author: Wilkenson H. 
+"""
+
 
 @dataclass
 class ShowData:
