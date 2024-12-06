@@ -1,6 +1,9 @@
 from dataclasses import dataclass
 import pandas as pd  # type: ignore
 
+"""
+Author: Wilkenson H. 
+"""
 
 @dataclass
 class CleanData:
