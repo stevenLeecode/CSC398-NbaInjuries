@@ -5,6 +5,7 @@ import pandas as pd  # type: ignore
 Author: Wilkenson H. 
 """
 
+
 @dataclass
 class CleanData:
 
@@ -75,7 +76,7 @@ class CleanData:
                 if isinstance(note, str) and keyword.lower() in note.lower():
                     injury_found = True
                     injury_type = keyword  # Capture the first match as the injury type
-                    break  # No need to check further keywords
+                    break
             return injury_type, 1 if injury_found else 0
 
         injury_info = data_df[notes_col].apply(

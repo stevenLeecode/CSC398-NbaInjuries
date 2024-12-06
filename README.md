@@ -1,5 +1,8 @@
 # CSC398-NbaInjuries
 
+#### Author Wilkenson H.
+Following this will only show the dataprocessing step 
+
 1. In the root directory creave a venv folfer and activate it 
  
   - for mac OS 
